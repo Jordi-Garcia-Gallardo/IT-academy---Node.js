@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8"> 
+ 	<title> Spring Javascript</title>
+
+</head>
+
+<body>
+	
+<script>
+    /* 
+    Exercici 1 
+    L'exercici consisteix a crear un fitxer anomenat ciber.html 
+    i mostrar per consola un 'Hola mundo' (per activar la consola ->; F12). Pista: Console.log()
+    */
+    console.log('Hola mundo');
+
+    /* 
+    Exercici 2
+    Crea un alert que mostri el teu nom:
+    */
+   alert('¡Me llamo Jordi!');
+
+   /*
+   Exercici 3
+   Crea una variable que contingui el teu nom i un altre que contingui el teu cognom.
+   */
+   var Nom = 'Jordi';
+   var Cognom = 'Garcia';
+   var NomComplet = Nom + ' ' + Cognom;
+   console.log(NomComplet) 
+
+   /*
+   Exercici 4
+   Crea dos variables amb dos números i fes una suma entre ells.
+   */
+
+   var Valors1 = 5;
+   var Valors2 = 7;
+   var Resultat = Valors1 + Valors2;
+   console.log('Resultat Exercici-4   ' + Valors1 + '+' + Valors2 + ' es ' + Resultat)
+
+   /*
+   Exercici 5
+   Crea una variable nota_examen juntament amb un alert que ens digui si l’examen ha estat aprovat o no 
+   juntament amb la nota. (caldrà utilitzar un condicional IF)
+   */ 
+   var nota_examen = 8;
+   if(nota_examen >= 5) {
+       alert('Examen Aprovat')
+    }  else {
+       alert('Examen suspes')
+   }
+
+   /* 
+   Exercici 6
+   Reemplaça la paraula blau per la paraula verd del següent text 
+   Tinc un cotxe de color blau. 
+   Després intenta fer-ho remplaçant les o per les u.
+   */
+
+
+    /* 
+   Exercici 7
+   Donat el seguit llistat d'objectes 'taula', 'cadira', 'ordinador', 'libreta', 
+   per un bucle que mostri per pantalla cada objecte i la seva posició al llistat.
+   */
+  
+   var Objectes = ['taula', 'cadira', 'ordinador', 'llibreta'];
+
+  for ( let i=0; i<Objectes.length; i++) {
+      console.log("L'objecte " + Objectes[i] + ' esta a la posició ' + i);
+  }
+
+    /*
+   Exercici 8
+   Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2.
+   Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+   function calculadora( __, __, __)
+	            {
+	            ……...
+	            }
+	            
+	            var resultat = calculadora('resta',40,20);
+   */
+
+</script>
+
+</body>
+</html>

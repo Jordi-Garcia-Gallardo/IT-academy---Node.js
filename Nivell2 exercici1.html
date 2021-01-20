@@ -1,0 +1,40 @@
+<meta charset="utf-8"> 
+<script>
+/* 
+Nivell 2
+Exercici 1 
+Aprofita la funció "calculadora" de l'exercici anterior per crear una calculadora completa amb opcions per sumar, restar, multiplicar i dividir. 
+Hauràs de controlar el Zero com a denominador d'una divisió.
+*/
+   
+function calculadora(operador,valor1,valor2) {
+         
+    switch (operador) {
+      case 'sumar':
+        ResultatCalculadora = (valor1 + valor2); 
+        console.log(ResultatCalculadora);
+        break;
+      case 'restar':
+        ResultatCalculadora = (valor1 - valor2);
+        console.log(ResultatCalculadora);
+        break;
+      case 'multiplicar':
+        ResultatCalculadora = (valor1 * valor2);
+        console.log(ResultatCalculadora);
+        break;
+      case 'dividir':{
+        ResultatCalculadora = (valor1 / valor2);
+        if(valor2 === 0){
+           console.log('error')
+        } else {
+           console.log(ResultatCalculadora);
+        }
+        break;
+      }
+        
+    }
+}
+
+calculadora('sumar',5,8)
+
+</script>

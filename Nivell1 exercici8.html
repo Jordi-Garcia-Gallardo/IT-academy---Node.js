@@ -1,0 +1,36 @@
+
+<meta charset="utf-8"> 
+
+<script>
+/*
+Exercici 8
+Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2.
+Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.
+function calculadora( __, __, __)
+	   {
+	    ……...
+	   }
+	            
+var resultat = calculadora('resta',40,20);
+*/
+   
+function calculadora(operador,valor1,valor2) {    
+  switch (operador) {
+    case 'sumar':
+      ResultatCalculadora = (valor1 + valor2); 
+      console.log(ResultatCalculadora);
+      break;
+    case 'restar':
+      ResultatCalculadora = (valor1 - valor2);
+      console.log(ResultatCalculadora);
+      break;
+    case 'multiplicar':
+      ResultatCalculadora = (valor1 * valor2);
+      console.log(ResultatCalculadora);
+      break;
+  }
+}
+  
+calculadora('multiplicar',3,2);
+
+</script>

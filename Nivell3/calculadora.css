@@ -1,0 +1,53 @@
+
+.cajita_valor {           /* para marcar por classes .class */
+    color: #000000f3;
+    background-color: #67E4E0 ;
+    width: 410px;
+    height: 100px;
+    font-size: 60px;
+    text-align: right;
+    border-radius: 0.3em;
+    align-items: center;  
+    padding-right: 10px;  
+}
+
+.top {
+    color:#D9F8F7;
+    height: 70px;
+    font-size: 35px;
+    font-family: helvetica;
+    text-align: center; 
+    font-weight: bold; 
+}
+
+#bC {       /* para marcar por id*/
+    color:#ECFCFB;
+    background-color:#E067E4;
+}
+
+[type="Button"] {   /* por atributo */
+    color:#A0EEEC;
+    background-color:#67AAE4;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    font-family:Helvetica;
+    margin: auto;
+    border-radius: 50%;
+    border-color: black;   
+}
+
+#calculadora{
+    background-color:#7C8C8C;
+    width: 400px;
+    border-color: black;
+    border-radius: 2%;
+    margin: auto;      
+}
+
+div {
+    background-color:#ECFCFB;
+    width: 500px;
+    height: 650px;
+}
+

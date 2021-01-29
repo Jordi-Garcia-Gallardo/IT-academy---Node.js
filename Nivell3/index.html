@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Proyecto Calculadora</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+
+  </head>
+  <body>
+    
+
+    <div class="container">
+      <table id="calculadora">
+        <tr class=top><td colspan="4">
+          CALCULADORA
+        </tr>
+        <tr class=du><td colspan="4">
+          <input type="text" id="valorNumero" maxlength="20" value="0" class="cajita_valor" readonly="true"></td>
+        </tr>  
+        <tr>
+          <td><input type="Button" id="b7" value="7" class="boton" onclick="log('7')"></td>
+          <td><input type="Button" id="b8" value="8" class="boton" onclick="log('8')"></td>
+          <td><input type="Button" id="b9" value="9" class="boton" onclick="log('9')"></td>
+          <td><input type="Button" id="bSumar" value="+" class="boton funcion" onclick="operar(1)"></td>
+        </tr>
+        <tr>
+          <td><input type="Button" id="b4" value="4" class="boton" onclick="log('4')"></td>
+          <td><input type="Button" id="b5" value="5" class="boton" onclick="log('5')"></td>
+          <td><input type="Button" id="b6" value="6" class="boton" onclick="log('6')"></td>
+          <td><input type="Button" id="bRestar" value="-" class="boton funcion"onclick="operar(2)"></td>
+        </tr>
+        <tr>
+          <td><input type="Button" id="b1" value="1" class="boton" onclick="log('1')"></td>
+          <td><input type="Button" id="b2" value="2" class="boton" onclick="log('2')"></td>
+          <td><input type="Button" id="b3" value="3" class="boton" onclick="log('3')"></td>
+          <td><input type="Button" id="bMultiplicar" value="x" class="boton funcion" onclick="operar(3)"></td>
+        </tr>
+        <tr>
+          <td><input type="Button" id="bC" value="C" class="boton funcion" onclick="C()"></td>
+          <td><input type="Button" id="b0" value="0" class="boton_largo" onclick="log('0')"></td>
+          <td><input type="Button" id="bDividir" value="/" class="boton funcion" onclick="operar(4)"></td>
+          <td><input type="Button" id="bigual" value="=" class="boton funcion" onclick="calcular()"></td>
+        </tr>
+      </table>  
+    </div>       
+  
+  <script src="EX.js"></script> 
+
+  </body>
+</html>
